@@ -19,14 +19,14 @@ const Home = () => {
           <h6 className="text-xl font-bold font-manrope text-white"> Bringing Clubs Together, For a Campus That Shines </h6>
           <div className="mt-5 sm:mt-5 mx-auto max-w-xl relative">
             <h1 className="text-5xl font-extrabold text-center leading-none tracking-tight text-white md:text-5xl lg:text-6xl dark:text-white">
-              Stay <span className="text-blue-600 text-decoration-line: underline">Up To Date</span> With us.
+              Stay <span className="text-[#1ca9c9] text-decoration-line: underline">Up To Date</span> With us.
             </h1>
           </div>
         </div>
       </div>
 
       {/* College Container Section */}
-      <div className="college-container">
+      <div className="college-container bg-blue-900">
         <h2>Nearby Universities</h2>
         
         <div className="college-item">
@@ -90,6 +90,135 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <ul className="grid grid-cols-1 xl:grid-cols-3 gap-y-10 gap-x-6 items-start p-8">
+    <li className="relative flex flex-col sm:flex-row xl:flex-col items-start">
+      <div className="order-1 sm:ml-6 xl:ml-0">
+        <h3 className="mb-1 text-[#E0FFFF] font-semibold">
+         
+          The Insightful Chronicles
+
+        </h3>
+        <div className="prose prose-slate prose-sm text-[#1ca9c9]">
+          <p>
+          Dive into a world of diverse perspectives and deep insights. The Insightful Chronicles offers thoughtful analysis, compelling stories, and practical advice on a wide range of topics.
+          </p>
+        </div>
+        <a
+          className="group inline-flex items-center h-9 rounded-full text-sm font-semibold whitespace-nowrap px-3 focus:outline-none focus:ring-2 bg-slate-100 text-slate-700 hover:bg-slate-200 hover:text-slate-900 focus:ring-slate-500 mt-6"
+          href="/browse-blog"
+        >
+          Learn more
+          <span className="sr-only">
+            , Completely unstyled, fully accessible UI components
+          </span>
+          <svg
+            className="overflow-visible ml-3 text-slate-300 group-hover:text-slate-400"
+            width={3}
+            height={6}
+            viewBox="0 0 3 6"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth={2}
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <path d="M0 0L3 3L0 6" />
+          </svg>
+        </a>
+      </div>
+      <img
+        src="https://i.pinimg.com/564x/b9/49/f1/b949f1580eea68e3a1af05f9bfcd0dc1.jpg"
+        alt=""
+        className="mb-6 shadow-md rounded-lg bg-slate-50 w-full sm:w-[17rem] sm:mb-0 xl:mb-6 xl:w-full"
+        width={1216}
+        height={640}
+      />
+    </li>
+    <li className="relative flex flex-col sm:flex-row xl:flex-col items-start">
+      <div className="order-1 sm:ml-6 xl:ml-0">
+        <h3 className="mb-1 text-[#bc4749] font-semibold">
+         
+          Everyday Wonders
+        </h3>
+        <div className="prose prose-slate prose-sm text-gray-600">
+          <p>
+          Discover the wonders in everyday life with our captivating stories and insightful posts. Everyday Wonders celebrates the small moments and big ideas that make life extraordinary.
+          </p>
+        </div>
+        <a
+          className="group inline-flex items-center h-9 rounded-full text-sm font-semibold whitespace-nowrap px-3 focus:outline-none focus:ring-2 bg-slate-100 text-slate-700 hover:bg-slate-200 hover:text-slate-900 focus:ring-slate-500 mt-6"
+          href="/browse-blog"
+        >
+          Learn more
+          <span className="sr-only">
+            , Beautiful hand-crafted SVG icons, by the makers of Tailwind CSS.
+          </span>
+          <svg
+            className="overflow-visible ml-3 text-slate-300 group-hover:text-slate-400"
+            width={3}
+            height={6}
+            viewBox="0 0 3 6"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth={2}
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <path d="M0 0L3 3L0 6" />
+          </svg>
+        </a>
+      </div>
+      <img
+        src="https://i.pinimg.com/736x/45/09/0f/45090f3b878c3f926eb667248bb1c0af.jpg"
+        alt=""
+        className="mb-6 shadow-md rounded-lg bg-slate-50 w-full sm:w-[17rem] sm:mb-0 xl:mb-6 xl:w-full h-1/3"
+        width={1216}
+        height={640}
+      />
+    </li>
+    <li className="relative flex flex-col sm:flex-row xl:flex-col items-start">
+      <div className="order-1 sm:ml-6 xl:ml-0">
+        <h3 className="mb-1 text-[#bc4749] font-semibold">
+          
+          Pathways to Growth
+        </h3>
+        <div className="prose prose-slate prose-sm text-gray-600">
+          <p>
+          Join us on a journey of continuous growth and self-improvement. Pathways to Growth offers practical tips, inspiring stories, and expert advice to help you navigate life’s challenges and opportunities.
+          </p>
+        </div>
+        <a
+          className="group inline-flex items-center h-9 rounded-full text-sm font-semibold whitespace-nowrap px-3 focus:outline-none focus:ring-2 bg-slate-100 text-slate-700 hover:bg-slate-200 hover:text-slate-900 focus:ring-slate-500 mt-6"
+          href="/browse-blog"
+        >
+          Learn more
+          <span className="sr-only">
+            , Seamless SVG background patterns by the makers of Tailwind CSS.
+          </span>
+          <svg
+            className="overflow-visible ml-3 text-slate-300 group-hover:text-slate-400"
+            width={3}
+            height={6}
+            viewBox="0 0 3 6"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth={2}
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <path d="M0 0L3 3L0 6" />
+          </svg>
+        </a>
+      </div>
+      <img
+        src="https://i.pinimg.com/564x/f5/1a/f1/f51af1108f1372182c1e32aa161f7009.jpg"
+        alt=""
+        className="mb-6 shadow-md rounded-lg bg-slate-50 w-full sm:w-[17rem] sm:mb-0 xl:mb-6 xl:w-full"
+        width={1216}
+        height={640}
+      />
+    </li>
+  </ul>
 
       <footer className="mt-auto w-full max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 items-center gap-5">

@@ -110,20 +110,6 @@
   }
   
   
-  body {
-    background: linear-gradient(to bottom right, #CCCCFF, #D3D3D3);
-  } 
-  
-  body{
-    background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
-  }
-  
-  
-  body{
-    background: linear-gradient(109.6deg, rgb(20, 30, 48) 11.2%, rgb(36, 59, 85) 91.1%);
-  }
-  
-  
   .ingenuity{
     color: purple;
   }

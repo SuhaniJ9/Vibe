@@ -117,7 +117,7 @@ const Login = () => {
                 <div className="md:block hidden w-1/2">
                     <img
                         className="rounded-2xl max-h-[1600px]"
-                        src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*s14P5eUcZbMKowFLpn5e_A.jpeg"
+                        src="https://i.pinimg.com/564x/83/4b/9b/834b9b59fee60fa860e5f0c0930e3ebe.jpg"
                         alt="login form image"
                     />
                 </div>
