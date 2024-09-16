@@ -88,24 +88,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="py-12 bg-[#E0FFFF]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-            <a href="/login" className="text-blue-700 hover:text-blue-900">
-              Login
-            </a>
-            <a href="/calendar" className="text-blue-700 hover:text-blue-900">
-              Calendar
-            </a>
-            <a href="/notifications" className="text-blue-700 hover:text-blue-900">
-              Notifications
-            </a>
-            <a href="/watch" className="text-blue-700 hover:text-blue-900">
-              Watch Recent Events
-            </a>
-          </div>
-        </div>
-      </div>
+      
     </section>
   )
 }

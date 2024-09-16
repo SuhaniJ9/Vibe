@@ -16,7 +16,7 @@ const Navbar = () => {
 <div className="w-36 self-center mr-2">
   <Link href="/"> <img
     className="w-max h-max"
-    src="vibe.png"
+    src="vibetribe.png"
   />
   </Link>
 </div>
