@@ -2,7 +2,6 @@
 import React from 'react'
 import Navbar from './(main)/navbar';
 import './home.css'
-import Link from 'next/link';
 
 
 const Home = () => {
