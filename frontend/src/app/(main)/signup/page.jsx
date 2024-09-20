@@ -6,6 +6,7 @@ import { MdOutlineMail } from "react-icons/md";
 import { CiLock } from "react-icons/ci";
 import Link from 'next/link';
 import * as Yup from 'yup'
+import { toast } from 'react-toastify';
 
 const Signup = () => {
     const addUserSchema = Yup.object().shape({});
@@ -17,7 +18,25 @@ const Signup = () => {
             password: "",
             cpassword: ""
         },
-    })
+        onSubmit: async (values,action) => {
+            console.log(values);
+            
+            const res = await fetch('http://localhost:5000/user/add', {
+              method: 'POST',
+              headers: {'Content-Type':'application/json'},
+              body: JSON.stringify(values),
+                   });
+              console.log(res.status);
+              action.resetForm();
+              if(res.status === 200){
+                  toast.success("User Created")
+              }
+                  else
+                  {
+                      toast.error("User Creation Failed")
+                  }
+          validationSchema: addUserSchema
+  }})
 
     return (
         <>
