@@ -1,18 +1,58 @@
 const express = require('express');
 const router = express.Router();
 const Model = require('../Models/UserModel');
+const jwt = require('jsonwebtoken');
+const verifyToken = require('./VerifyToken');
+require('dotenv').config();
 
 router.post('/add', (req, res) => {
     console.log(req.body);
     new Model(req.body).save()
         .then((result) => {
             res.status(200).json(result);
-        }).catch((err) => {
+        })
+        .catch((err) => {
             console.log(err);
             res.status(500).json(err);
         });
     res.status(200).send('User added successfully');
 });
+router.get('/getbyuser', verifyToken, (req, res) => {
+    res.status(200).json(req.user);
+});
+
+router.post('/authenticate', (req, res) => {
+    console.log(req.body);
+    Model.findOne(req.body)
+        .then((result) => {
+            if (result) {
+                const { _id, firstname, lastname, email} = result;
+                const payload = { _id, email,firstname,lastname };
+                jwt.sign(
+                    payload,
+                    process.env.JWT_SECRET,
+                    { expiresIn: '2 days' },
+                    (err, token) => {
+
+                        if (err) {
+                            console.log(err);
+                            res.status(500).json({ message: 'error creating token' })
+                        } else {
+                            res.status(200).json({ token,_id, firstname,lastname,email })
+                        }
+
+                    }
+
+                )
+            } else {
+                res.status(401).json({ message: 'Invalid Credentials' })
+            }
+        }).catch((err) => {
+            console.log(err);
+            res.status(500).json(err)
+        })
+});
+
 module.exports = router;
 
 

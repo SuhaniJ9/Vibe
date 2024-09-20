@@ -22,8 +22,39 @@ const Login = () => {
           },
           onSubmit: async (values, action) => {
               console.log(values)
-          }
-});
+              const res = await fetch("http://localhost:5000/user/authenticate", {
+                method: "POST",
+                body: JSON.stringify(values),
+                headers: {
+                  "Content-Type": "application/json",
+                },
+              });
+              console.log(res.status);
+        
+              if (res.status === 200) {
+                toast.success("Login Successfull");
+                const data = await res.json();
+                console.log(data);
+               sessionStorage.setItem('isloggedIn',true);
+               if(data.role=='admin')
+               {
+                sessionStorage.setItem('admin', JSON.stringify(data));
+                router.push("/admin/dashboard");
+               }
+               else {
+                sessionStorage.setItem('user', JSON.stringify(data));
+                setLoggedIn(true);
+                toast.success("Login Successfull");
+                router.push("/");   
+               }
+              }
+               else{
+                toast.error("Something went wrong");
+               }
+              
+            
+            validationSchema: addUserSchema
+        }});
   return (
     <section style={{ backgroundColor: "#f2e8cf" }} className=" min-h-screen flex box-border justify-center items-center">
 
