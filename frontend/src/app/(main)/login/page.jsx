@@ -5,24 +5,29 @@ import { CiLock } from "react-icons/ci";
 import { Formik, useFormik, yupToFormErrors } from 'formik'
 import * as Yup from 'yup'
 import Link from 'next/link';
+import toast from 'react-hot-toast';
 import { useRouter } from 'next/navigation';
+import useAppContext from '@/app/context/appcontext';
 
 const Login = () => {
-  
-  const router = useRouter();
-      const addUserSchema = Yup.object().shape({
-          email: Yup.string().email('Invalid email').required('Required'),
-          password: Yup.string().required('Required')
-      });
-  
-      const addUser = useFormik({
-          initialValues: {
-              email: '',
-              password: ''
-          },
-          onSubmit: async (values, action) => {
-              console.log(values)
-              const res = await fetch("http://localhost:5000/user/authenticate", {
+
+    const { setLoggedIn } = useAppContext()
+
+const router = useRouter();
+    const addUserSchema = Yup.object().shape({
+        email: Yup.string().email('Invalid email').required('Required'),
+        password: Yup.string().required('Required')
+    });
+
+    const addUser = useFormik({
+        initialValues: {
+            email: '',
+            password: ''
+        },
+        onSubmit: async (values, action) => {
+            console.log(values)
+         
+            const res = await fetch("http://localhost:5000/user/authenticate", {
                 method: "POST",
                 body: JSON.stringify(values),
                 headers: {
@@ -51,12 +56,11 @@ const Login = () => {
                else{
                 toast.error("Something went wrong");
                }
-              
-            
-            validationSchema: addUserSchema
-        }});
-  return (
-    <section style={{ backgroundColor: "#f2e8cf" }} className=" min-h-screen flex box-border justify-center items-center">
+            },
+        validationSchema: addUserSchema
+    });
+    return (
+        <section style={{ backgroundColor: "#f2e8cf" }} className=" min-h-screen flex box-border justify-center items-center">
 
             <div className="shadow-2xl rounded-2xl flex max-w-3xl p-5 items-center">
 
@@ -148,7 +152,7 @@ const Login = () => {
                 <div className="md:block hidden w-1/2">
                     <img
                         className="rounded-2xl max-h-[1600px]"
-                        src="https://i.pinimg.com/564x/83/4b/9b/834b9b59fee60fa860e5f0c0930e3ebe.jpg"
+                        src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*s14P5eUcZbMKowFLpn5e_A.jpeg"
                         alt="login form image"
                     />
                 </div>
@@ -156,7 +160,8 @@ const Login = () => {
 
 
         </section>
-  )
+
+    )
 }
 
 export default Login;
