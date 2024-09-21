@@ -6,7 +6,7 @@ import { MdOutlineMail } from "react-icons/md";
 import { CiLock } from "react-icons/ci";
 import Link from 'next/link';
 import * as Yup from 'yup'
-import { toast, Toaster } from 'react-hot-toast';
+import { toast} from 'react-hot-toast';
 
 const Signup = () => {
     const addUserSchema = Yup.object().shape({
@@ -37,12 +37,12 @@ const Signup = () => {
 
               if(res.status === 200){
                   toast.success("User Created")
-                  position: 'top-right'
+                
               }
                else
                   {
                       toast.error("User Creation Failed")
-                      position: 'top-right'
+                     
                   }
                 
                   
@@ -194,7 +194,6 @@ const Signup = () => {
                                 Register
                             </button>
                         </form>
-                        <Toaster />
                         <div className="mt-4 text-sm flex text-blue-800 justify-between items-center container-mr">
                             <p className="mr-3 md:mr-0">If you have an account..</p>
                             <Link style={{ backgroundColor: "#1ca9c9" }} href="/login" className="text-white bg-blue-800 hover:border-blue-800 rounded-xl py-2 px-5 hover:scale-105 hover:bg-blue-800 font-semibold duration-300">

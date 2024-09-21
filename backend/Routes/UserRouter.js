@@ -17,6 +17,25 @@ router.post('/add', (req, res) => {
         });
     res.status(200).send('User added successfully');
 });
+router.get('/getall', (req, res) => {
+    Model.find()
+        .then((result) => {
+            res.status(200).json(result);
+        }).catch((err) => {
+            console.log(err);
+            res.status(500).json(err);
+        });
+
+});
+router.delete('/delete/:id', (req, res) => {
+    Model.findByIdAndDelete(req.params.id)
+        .then((result) => {
+            res.status(200).json(result);
+        }).catch((err) => {
+            console.log(err);
+            res.status(500).json(err);
+        });
+});
 router.get('/getbyuser', verifyToken, (req, res) => {
     res.status(200).json(req.user);
 });
@@ -71,27 +90,11 @@ module.exports = router;
 // // require('dotenv').config();
 
 
-// router.get('/getall', (req, res) => {
-//     Model.find()
-//         .then((result) => {
-//             res.status(200).json(result);
-//         }).catch((err) => {
-//             console.log(err);
-//             res.status(500).json(err);
-//         });
-// });
+
 
 // // : denotes url parameter
 
-// router.delete('/delete/:id', (req, res) => {
-//     Model.findByIdAndDelete(req.params.id)
-//         .then((result) => {
-//             res.status(200).json(result);
-//         }).catch((err) => {
-//             console.log(err);
-//             res.status(500).json(err);
-//         });
-// });
+
 
 // router.put('/update/:id', (req, res) => {
 //     Model.findByIdAndUpdate(req.params.id, req.body)
