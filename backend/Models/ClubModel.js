@@ -6,9 +6,7 @@ const mySchema = new Schema({
     image: String,
     startDate: Date,
     endDate: Date,
-    prize: String,
-    winner: { type: Schema.Types.ObjectId, ref: 'user' },
-    createdAt: { type: Date, default: Date.now }
+    prize: String
 });
 
 module.exports = model('clubs', mySchema);

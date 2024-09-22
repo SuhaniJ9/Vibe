@@ -1,6 +1,5 @@
 const { Schema, model } = require('../connection')
 
-
 const userSchema = new Schema({
     firstname: {
         type: String,
@@ -18,8 +17,11 @@ const userSchema = new Schema({
     password: {
         type: String,
         required: true
+    },
+    role:{
+        type:String,
+        default:"user"
     }
-    
 })
 
 module.exports = model('user', userSchema)

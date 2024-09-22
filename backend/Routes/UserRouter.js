@@ -45,7 +45,7 @@ router.post('/authenticate', (req, res) => {
     Model.findOne(req.body)
         .then((result) => {
             if (result) {
-                const { _id, firstname, lastname, email} = result;
+                const { _id, firstname, lastname, email, role} = result;
                 const payload = { _id, email,firstname,lastname };
                 jwt.sign(
                     payload,
@@ -57,7 +57,7 @@ router.post('/authenticate', (req, res) => {
                             console.log(err);
                             res.status(500).json({ message: 'error creating token' })
                         } else {
-                            res.status(200).json({ token,_id, firstname,lastname,email })
+                            res.status(200).json({ token,_id, role, firstname,lastname,email })
                         }
 
                     }
@@ -70,6 +70,19 @@ router.post('/authenticate', (req, res) => {
             console.log(err);
             res.status(500).json(err)
         })
+});
+
+router.get('/getcurrentuser', async (req, res) => {
+    try {
+        const userId = req.query.userId; // Accept userId as a query parameter
+        const user = await Model.findById(userId).select('-password');
+        if (!user) {
+            return res.status(404).send({ error: 'User not found' });
+        }
+        res.send(user);
+    } catch (err) {
+        res.status(500).send({ error: 'Server error' });
+    }
 });
 
 module.exports = router;

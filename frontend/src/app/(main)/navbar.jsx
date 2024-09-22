@@ -31,14 +31,14 @@ const Navbar = () => {
 
                   <div>
                     <a className="py-3 px-4 text-blue-700 text-lg font-semibold border border-blue-700 rounded-xl hover:bg-[#1ca9c9] hover:text-white disabled:opacity-50 disabled:pointer-events-none"
-                                          href="/clubs"
+                                          href="/browse-clubs"
                     >
                       Clubs
                     </a>
                   </div>
                   <div>
                     <a className="py-3 px-4 text-blue-700 text-lg font-semibold border border-blue-700 rounded-xl hover:bg-[#1ca9c9] hover:text-white disabled:opacity-50 disabled:pointer-events-none"
-                      href="/events"
+                      href="/browse-events"
                     >
                      Events
                     </a>
