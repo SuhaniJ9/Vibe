@@ -11,5 +11,5 @@ const mySchema = new Schema({
     createdAt: { type: Date, default: Date.now }
 });
 
-module.exports = model('clubs', mySchema);
+module.exports = model('events', mySchema);
 

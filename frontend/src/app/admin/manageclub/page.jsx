@@ -45,11 +45,8 @@ if(res.status==200)
  return Compts.map((Compt) => (
     <tr>
        <th scope="col" className="px-6 py-3 text-lg text-blue-900">
-       <img
-            className="w-full h-auto"
-            src={'http://localhost:5000/' + Compt.image}
-            alt="competition image"
-          />
+       <img src={`http://localhost:5000/uploads/${Compt.image}`} alt="Competition Image" />
+
         </th>
         <th scope="col" className="px-6 py-3 text-lg text-blue-900">
           {Compt.topic}

@@ -48,6 +48,14 @@ const Layout = ({ children }) => {
                                  </span>
                      
                                 </Link>
+                                <Link href="/admin/manageevents" className="flex  text-[#bc4749] bg-[#f2e8cf]  hover:border-[#fdba74] rounded-xl py-2 px-10 hover:scale-105 hover:bg-[#fdba74] font-semibold duration-300 space-x-2  focus:outline-none  focus:text-indigo-400  text-white rounded ">
+                                <PiBrowsersDuotone className='text-xl text-[#bc4749] ' />
+                           
+                            <span className='text-[#bc4749]'>
+                           Events
+                                 </span>
+                     
+                                </Link>
 
                                
                                 
