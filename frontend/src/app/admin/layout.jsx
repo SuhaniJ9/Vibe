@@ -3,13 +3,13 @@ import { LuLayoutDashboard } from "react-icons/lu";
 import { FaRegUser } from "react-icons/fa6";
 import { PiBrowsersDuotone } from "react-icons/pi";
 import { IoIosLogOut } from "react-icons/io";
+import { BsCalendar4Event } from "react-icons/bs";
 
 import Link from 'next/link';
 
 const Layout = ({ children }) => {
     return (
         <>
-
             <>
                 {/* component */}
                 <div className="flex">
@@ -40,7 +40,7 @@ const Layout = ({ children }) => {
                                  </span>
                      
                                 </Link>
-                                <Link href="/admin/manageclub" className="flex  text-[#bc4749] bg-[#f2e8cf]  hover:border-[#fdba74] rounded-xl py-2 px-10 hover:scale-105 hover:bg-[#fdba74] font-semibold duration-300 space-x-2  focus:outline-none  focus:text-indigo-400  text-white rounded ">
+                                <Link href="/admin/manageclub" className="flex  text-[#bc4749] bg-[#f2e8cf]  hover:border-[#fdba74] rounded-xl py-2 px-16 hover:scale-105 hover:bg-[#fdba74] font-semibold duration-300 space-x-2  focus:outline-none  focus:text-indigo-400  text-white rounded ">
                                 <PiBrowsersDuotone className='text-xl text-[#bc4749] ' />
                            
                             <span className='text-[#bc4749]'>
@@ -48,16 +48,14 @@ const Layout = ({ children }) => {
                                  </span>
                      
                                 </Link>
-                                <Link href="/admin/manageevents" className="flex  text-[#bc4749] bg-[#f2e8cf]  hover:border-[#fdba74] rounded-xl py-2 px-10 hover:scale-105 hover:bg-[#fdba74] font-semibold duration-300 space-x-2  focus:outline-none  focus:text-indigo-400  text-white rounded ">
-                                <PiBrowsersDuotone className='text-xl text-[#bc4749] ' />
+                                <Link href="/admin/manageevents" className="flex  text-[#bc4749] bg-[#f2e8cf]  hover:border-[#fdba74] rounded-xl py-2 px-16 hover:scale-105 hover:bg-[#fdba74] font-semibold duration-300 space-x-2  focus:outline-none  focus:text-indigo-400  text-white rounded ">
+                                <BsCalendar4Event className='text-xl text-[#bc4749] ' />
                            
                             <span className='text-[#bc4749]'>
                            Events
                                  </span>
                      
                                 </Link>
-
-                               
                                 
                                 <Link href="/" className="flex  text-[#bc4749] bg-[#f2e8cf]  hover:border-[#fdba74] rounded-xl py-2 px-16 hover:scale-105 hover:bg-[#fdba74] font-semibold duration-300 space-x-2  focus:outline-none  focus:text-indigo-400  text-white rounded ">
                                 <IoIosLogOut className='text-xl text-[#bc4749] ' />
@@ -69,26 +67,6 @@ const Layout = ({ children }) => {
                                 </Link>
 
                             </div>
-                            
-                            
-                           
-                             <div className="flex flex-col justify-start items-center px-6 bg[#f2e8cf] mt-5">
-
-                                <div className=" flex justify-between items-center w-full bg[#f2e8cf]">
-                                    <div className="flex justify-center items-center  space-x-2">
-                                        
-                                        <div className="flex justify-start flex-col items-start">
-                                            <p className="cursor-pointer text-sm leading-5 text-white ml-10">
-                                                Suhani Jaiswal
-                                            </p>
-                                            <p className="cursor-pointer text-sm leading-3 text-gray-300 ml-2 mt-2">
-                                                suhanijaiswal09@gmail.com
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
 
                         </div>
                     </div>
