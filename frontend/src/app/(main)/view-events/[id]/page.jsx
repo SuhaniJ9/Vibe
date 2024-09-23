@@ -131,7 +131,7 @@ const ViewEvent = () => {
               name="message"
               cols={30}
               rows={5}
-              placeholder="Write do you want to join this club?" 
+              placeholder="Why do you want to join us?" 
               className="mb-2 w-full bg-blue-900 text-white rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
               defaultValue={""}
               onChange={contact.handleChange}
