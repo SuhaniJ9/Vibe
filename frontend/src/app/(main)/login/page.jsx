@@ -75,7 +75,7 @@ const Login = () => {
                                     <input
                                         style={{ backgroundColor: "#1ca9c9" }}
                                         type="email"
-                                        className="w-full text-white -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-blue-800 outline-none focus:border-indigo-500"
+                                        className="w-full text-white -ml-10 pl-10 pr-3 py-2 rounded-lg placeholder:text-gray-500 border-2 border-blue-800 outline-none focus:border-indigo-500"
                                         placeholder="john@example.com"
                                         id="email"
                                         name="email"
@@ -98,7 +98,7 @@ const Login = () => {
                                     <input
                                         style={{ backgroundColor: "#1ca9c9" }}
                                         type="password"
-                                        className="w-full -ml-10 text-white pl-10 pr-3 py-2 rounded-lg border-2 border-blue-800 outline-none focus:border-indigo-500"
+                                        className="w-full -ml-10 text-white pl-10 pr-3 py-2 placeholder:text-gray-500 rounded-lg border-2 border-blue-800 outline-none focus:border-indigo-500"
                                         placeholder="********"
                                         id="password"
                                         name="password"
