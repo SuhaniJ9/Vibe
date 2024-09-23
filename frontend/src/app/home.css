@@ -1,0 +1,145 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    min-height: 100vh;
+    position: relative;
+  }
+  
+  .logoname{
+    color: lightblue; 
+    font-weight: bold; 
+    text-shadow: 0 0 50px turquoise;
+  
+  }
+  
+  
+  .home-text {
+    font-size: 2rem;
+    margin-top: 75px;
+    align-items: center;
+  }
+  
+  
+  
+  .carousel-image {
+    object-fit: cover;
+    width: 1600px;
+    height: 600px; 
+  }
+  
+  
+  /* .carousel{
+    object-fit: cover;
+    width: 1000px;
+    height: 600px; 
+  } */
+  
+  
+  .college-container {
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+  
+  }
+  
+  .text-center {
+    font-size: 2rem;
+    margin-top: 25px;
+  }
+  
+  .college-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+  
+  .reverse {
+    flex-direction: row-reverse;
+  }
+  
+  .college-image-container {
+    width: 40%;
+  }
+  
+  .college-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .rounded-circle-left {
+    border-top-right-radius: 40%;
+    border-bottom-right-radius: 40%;
+  }
+  
+  .rounded-circle-right {
+    border-top-left-radius: 40%;
+    border-bottom-left-radius: 40%;
+  }
+  
+  .college-text-container {
+    width: 55%;
+    padding: 1rem;
+  }
+  
+  .college-text-container h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: lightblue;
+  }
+  
+  .college-text-container p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: whitesmoke;
+  }
+  
+  
+  .college-container h2 {
+    font-size: 3rem;
+    margin-top: 25px;
+    margin-bottom: 100px;
+    color: #7FFFD4;
+    text-shadow: 0 0 10px  black;
+    text-align: center;
+  }
+  
+  
+  body {
+    background: linear-gradient(to bottom right, #CCCCFF, #D3D3D3);
+  } 
+  
+  body{
+    background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+  }
+  
+  
+  body{
+    background: linear-gradient(109.6deg, rgb(20, 30, 48) 11.2%, rgb(36, 59, 85) 91.1%);
+  }
+  
+  
+  .ingenuity{
+    color: purple;
+  }
+  
+  .tedx{
+    color: red;
+  }
+  
+  .cricket{
+    color:black ;
+  }
+  
+  .sinusoid{
+    color: coral;
+  }
+  
+  .rangmanch{
+    color: azure;
+  }

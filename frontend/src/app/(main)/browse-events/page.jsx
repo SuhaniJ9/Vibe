@@ -66,8 +66,8 @@ const BrowseEvents = () => {
     <Navbar>
 
     </Navbar>
-    <div className=' bg-[#f2e8cf]'>
-    <div className="border border-[#bc4749]  flex justify-between text-sm ">
+    <div className=' bg-blue-900'>
+    <div className="border border-blue-400  flex justify-between text-sm ">
     </div>
 <div className="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16  ">
     
