@@ -77,7 +77,7 @@ const About = () => {
               </div>
               <div className="text-center">
                 <img
-                  src="/images/suhani.jpg"
+                  src="/images/Suh.jpg"
                   alt="Suhani Jaiswal"
                   className="w-32 h-32 object-cover rounded-full shadow-md"
                 />

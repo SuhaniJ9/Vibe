@@ -114,7 +114,7 @@ const Home = () => {
         <div className="order-1 sm:ml-6 xl:ml-0 text-lg">
             <h3 className="mb-1 text-white font-semibold">Rangmanch </h3>
             <div className="prose prose-slate prose-sm [#E0FFFF]">
-              <p>Rangmanch is a dynamic platform for aspiring actors and theater enthusiasts to explore drama and performance. We offer opportunities for acting, directing, and stage design through script readings, rehearsals, and performances. Join us to connect with fellow members and create unforgettable moments on stage.</p>
+              <p>Rangmanch is a dynamic platform for aspiring actors and theater enthusiasts to explore drama and performance. We offer opportunities for acting, directing, and stage design through script readings, rehearsals, and performances.</p>
             </div>
             <a className="group inline-flex items-center h-9 rounded-full text-sm font-semibold px-3 bg-slate-100 hover:bg-slate-200 text-slate-700 mt-6" href="/browse-clubs">
               Learn more
@@ -130,7 +130,7 @@ const Home = () => {
         <div className="order-1 sm:ml-6 xl:ml-0 text-lg">
             <h3 className="mb-1 text-white font-semibold"> Impetus </h3>
             <div className="prose prose-slate prose-sm [#E0FFFF]">
-              <p>Dance Club is a welcoming space for passionate dancers to express themselves and learn new styles. Whether you're a beginner or experienced, our club provides a supportive environment for growth. Join us for weekly dance sessions, workshops, and performances to experience the joy of movement and connect with fellow dancers!</p>
+              <p>Dance Club is a welcoming space for passionate dancers to express themselves and learn new styles. Whether you're a beginner or experienced, our club provides a supportive environment for growth.</p>
             </div>
             <a className="group inline-flex items-center h-9 rounded-full text-sm font-semibold px-3 bg-slate-100 hover:bg-slate-200 text-slate-700 mt-6" href="/browse-clubs">
               Learn more
@@ -146,7 +146,7 @@ const Home = () => {
         <div className="order-1 sm:ml-6 xl:ml-0 text-lg">
             <h3 className="mb-1 text-white font-semibold"> Verismo </h3>
             <div className="prose prose-slate prose-sm [#E0FFFF]">
-              <p>Verismo Club is a vibrant community for music enthusiasts to explore and share their talents. Whether you’re a seasoned musician or just starting out, we welcome you to join us for weekly practice sessions, jam sessions, and performances. Experience the joy of making music together and connect with a supportive and inspiring group of fellow music lovers!</p>
+              <p>Verismo Club is a vibrant community for music enthusiasts to explore and share their talents. Whether you’re a seasoned musician or just starting out, we welcome you to join us for weekly practice sessions, jam sessions, and performances.</p>
             </div>
             <a className="group inline-flex items-center h-9 rounded-full text-sm font-semibold px-3 bg-slate-100 hover:bg-slate-200 text-slate-700 mt-6" href="/browse-clubs">
               Learn more
@@ -158,6 +158,35 @@ const Home = () => {
           <img src="https://i.pinimg.com/736x/e4/17/c2/e417c2752ba89baa407139aaf7c0b567.jpg" alt="" className="mb-6 shadow-md rounded-lg bg-slate-50 w-full h-5000px sm:w-[17rem] xl:w-full" />
         </li>
       </ul>
+      <footer className="mt-auto w-full max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 items-center gap-5">
+          <div></div>
+          <ul className="text-center">
+            {/* <li className="inline-block relative pe-8 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-3 before:-translate-y-1/2 before:content-['/'] before:text-white">
+              <a style={{color:"#1ca9c9"}} className="inline-flex gap-x-2 text-lg text-gray-500 hover:text-gray-800 dark:text-neutral-500 dark:hover:text-neutral-200" href="/help">
+                HELP
+              </a>
+            </li> */}
+            <li className="inline-block relative pe-8 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-3 before:-translate-y-1/2 before:content-['/'] before:text-white">
+              <a style={{color:"#1ca9c9"}} className="inline-flex gap-x-2 text-lg hover:text-gray-800 dark:text-neutral-500 dark:hover:text-neutral-200" href="/faqs">
+                FAQS
+              </a>
+            </li>
+          </ul>
+          <div className="md:text-end space-x-2">
+            <a className="size-8 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent text-white hover:bg-[#1ca9c9] disabled:opacity-50 disabled:pointer-events-none" href="#">
+              <svg className="flex-shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"/>
+              </svg>
+            </a>
+            <a className="size-8 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent text-white hover:bg-[#1ca9c9] disabled:opacity-50 disabled:pointer-events-none" href="#">
+              <svg className="flex-shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.336v-.427C14.367 5.003 11.064 0 5.026 0 3.587 0 2.156.325 0 1.716v12.568c2.156 1.39 3.587 1.716 5.026 1.716zm-.085-5.317c-.491 0-.941-.39-.941-.862 0-.472.45-.861.941-.861.492 0 .941.39.941.861 0 .472-.449.862-.941.862zm-.501-4.863c-.77 0-1.338-.327-1.338-.977 0-.651.568-.975 1.338-.975.769 0 1.336.324 1.336.975 0 .65-.567.977-1.336.977zm3.333 4.863c-.491 0-.941-.39-.941-.862 0-.472.45-.861.941-.861.492 0 .941.39.941.861 0 .472-.449.862-.941.862zm.501-4.863c-.77 0-1.338-.327-1.338-.977 0-.651.568-.975 1.338-.975.769 0 1.336.324 1.336.975 0 .65-.567.977-1.336.977z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </footer>
     </>
   )
 }
