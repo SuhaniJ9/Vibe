@@ -40,21 +40,15 @@ const BrowseEvents = () => {
           />
           <div className="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25"></div>
         </a>
-          <div className="text-xs absolute top-0 right-0 bg-indigo-600 px-4 py-2 text-white mt-3 mr-3 hover:bg-white hover:text-indigo-600 transition duration-500 ease-in-out">
-           Prize: {compt.prize}
-          </div>
       </div>
   
       <div className="px-6 py-4 mb-auto">
         <a
           href="#"
-          className="font-medium text-gray-600 text-lg inline-block hover:text-[#bc4749] transition duration-500 ease-in-out inline-block mb-2"
+          className="font-medium text-[#E0FFFF] text-lg inline-block hover:text-white transition duration-500 ease-in-out inline-block mb-2"
         >
           {compt.topic}
         </a>
-        <p className="text-[#bc4749] text-sm">
-          {compt.description}
-        </p>
       </div>
     </div>
     

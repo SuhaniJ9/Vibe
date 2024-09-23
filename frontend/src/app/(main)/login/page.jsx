@@ -43,7 +43,7 @@ const Login = () => {
                 sessionStorage.setItem('isloggedIn', true);
                 if (data.role == 'admin') {
                     sessionStorage.setItem('admin', JSON.stringify(data));
-                    router.push("/admin/dashboard");
+                    router.push("/admin/manageuser");
                 } else {
                     sessionStorage.setItem('user', JSON.stringify(data));
                     setLoggedIn(true);

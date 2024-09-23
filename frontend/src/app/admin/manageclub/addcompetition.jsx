@@ -102,7 +102,7 @@ const AddCompetition = ({close}) => {
                                         htmlFor="name"
                                         className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                                     >
-                                        Topic
+                                        Name
                                     </label>
                                     <input
                                         type="text"
@@ -114,54 +114,6 @@ const AddCompetition = ({close}) => {
                                         placeholder="Ex. Apple iMac 27“"
                                     />
                                 </div>
-
-                                <div>
-                                    <label
-                                        htmlFor="brand"
-                                        className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                                    >
-                                        Start Date
-                                    </label>
-                                    <input
-                                        type="date"
-                                        name="startDate"
-                                        onChange={clubForm.handleChange}
-                                        value={clubForm.values.startDate}
-                                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-
-                                    />
-                                </div>
-                                <div>
-                                    <label
-                                        htmlFor="brand"
-                                        className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                                    >
-                                        End Date
-                                    </label>
-                                    <input
-                                        type="date"
-                                        name="endDate"
-                                        onChange={clubForm.handleChange}
-                                        value={clubForm.values.endDate}
-                                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-
-                                    />
-                                </div>
-                                <div>
-                                    <label
-                                        htmlFor="price"
-                                        className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                                    >
-                                        Prize
-                                    </label>
-                                    <input
-                                        type="text"
-                                        name="prize"
-                                        onChange={clubForm.handleChange}
-                                        value={clubForm.values.prize}
-                                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-
-                                    />
                                     <div>
                                         <label
                                             className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
@@ -176,29 +128,7 @@ const AddCompetition = ({close}) => {
                                             onChange={uploadFile}
                                         />
                                     </div>
-
-                                </div>
-                                <div>
-                                    <label
-                                        htmlFor="category"
-                                        className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                                    >
-                                        Category
-                                    </label>
-                                    <select
-                                        id="category"
-                                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                                    >
-                                        <option selected="">Fashion</option>
-                                        <option value="TR">Travel</option>
-                                        <option value="FO">Food</option>
-                                        <option value="TECH">Technology</option>
-                                        <option value="BU">Business</option>
-                                        <option value="LI">Lifestyle</option>
-                                        <option value="FI">Finance</option>
-                                        <option value="EN">Environment</option>
-                                    </select>
-                                </div>
+                                
                                 <div className="sm:col-span-2">
                                     <label
                                         htmlFor="description"

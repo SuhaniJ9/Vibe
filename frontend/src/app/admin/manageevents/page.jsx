@@ -55,18 +55,11 @@ if(res.status==200)
         <th scope="col" className="px-6 py-3 text-lg text-blue-900">
           {Compt.description}
         </th>
-        <th scope="col" className="px-6 py-3 text-lg text-blue-900">
-        {new Date(Compt.startDate).toLocaleDateString()}
-        </th>
-        <th scope="col" className="px-6 py-3 text-lg text-blue-900">
-          {new Date(Compt.endDate).toLocaleDateString()}
-        </th>
+        
         <button onClick = {() => {deleteCompt(Compt._id)}} className="text-white bg-red-900 mt-2 mb-2 hover:border-orange-700 rounded-xl py-1 px-5 hover:scale-105 hover:bg-orange-700 font-semibold duration-300 ">
           Delete
          </button>
-        <Link href={"/admin/updatecompetition/" + Compt._id} className="text-white bg-blue-900 mt-2 hover:border-blue-700 rounded-xl py-1 px-5 hover:scale-105 hover:bg-blue-700 font-semibold duration-300 ">
-          Update
-         </Link>
+        
       </tr>
   )
 )}
@@ -92,31 +85,23 @@ if(res.status==200)
         onClick={e => setIsOpen(true)}
         className="mt-16 py-3 mx-2 mb-3 px-4 inline-flex text-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none"
       >
-         Add Competition
+         Add Events
       </button>
-  <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400  bg-[#f2e8cf] mx-2 mt-2">
+  <table className="w-full text-sm text-left rtl:text-right bg-[#E0FFFF] mx-2 mt-2">
   
     
-    <thead className="text-xs text-gray-700 uppercase bg-[#bc4749] dark:text-[#f2e8cf]">
+    <thead className="text-xs text-gray-700 uppercase bg-blue-900 dark:text-[#E0FFFF]">
     <tr>
     <th scope="col" className="px-6 py-3 text-lg">
           Cover
         </th>
     <th scope="col" className="px-6 py-3 text-lg">
-          Title
+          Name
         </th>
         <th scope="col" className="px-6 py-3 text-lg">
           Description
         </th>
-        <th scope="col" className="px-6 py-3 text-lg">
-          Start Date
-        </th>
-        <th scope="col" className="px-6 py-3 text-lg">
-        End Date
-        </th>
-        <th scope="col" className="px-6 py-3 text-lg">
-        Winner
-        </th>
+       
         <th scope="col" className="px-6 py-3 text-lg">
         Action
         </th>

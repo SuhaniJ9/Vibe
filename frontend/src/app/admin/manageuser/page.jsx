@@ -53,10 +53,10 @@ if(res.status==200)
 )}
   return(
     <div className="relative overflow-x-auto">
-  <table className="w-screen h-screen text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400  bg-[#f2e8cf] mx-2 mt-2">
+ <table className="w-full text-sm text-left rtl:text-right bg-[#E0FFFF] mx-2 mt-2">
   
     
-    <thead className="text-xs text-gray-700 uppercase bg-[#bc4749] dark:text-[#f2e8cf]">
+  <thead className="text-xs text-gray-700 uppercase bg-blue-900 dark:text-[#E0FFFF]">
     <tr>
     <th scope="col" className="px-6 py-3 text-lg">
           Name
