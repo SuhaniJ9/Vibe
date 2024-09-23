@@ -21,7 +21,6 @@ const Signup = () => {
             lastname: "",
             email: "",
             password: "",
-            cpassword: ""
 
         },
         onSubmit: async (values,action) => {
@@ -151,35 +150,12 @@ const Signup = () => {
                                             <input
                                                 style={{ backgroundColor: "#1ca9c9" }}
                                                 type="password"
-                                                className="w-full -ml-10 text-white pl-10 pr-3 py-2 rounded-lg border-2 border-blue-800 outline-none focus:border-indigo-500 placeholder:text-gray-500"
+                                                className="w-full -ml-10 text-white pl-10 pr-3 py-2 px-10 rounded-lg border-2 border-blue-800 outline-none focus:border-indigo-500 placeholder:text-gray-500"
                                                 placeholder="********"
                                                 id="password"
                                                 
                                                 name="password"
                                                 value={signupForm.values.password}
-                                                onChange={signupForm.handleChange}
-                                            />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="flex w-1/2">
-                                    <div className="w-full text-blue-800 px-3 mb-3">
-                                        <label htmlFor="" className="text-xs font-semibold px-1">
-                                            Confirm Password
-                                        </label>
-                                        <div className="flex">
-                                            <div className="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center">
-                                                <CiLock className='text-xl text-white' />
-                                            </div>
-                                            <input
-                                                style={{ backgroundColor: "#1ca9c9" }}
-                                                type="password"
-                                                className="w-full text-white -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-blue-800 outline-none focus:border-indigo-500 placeholder:text-gray-500"
-                                                placeholder="********"
-                                                id="cpassword"
-                                                required
-                                                name="cpassword"
-                                                value={signupForm.values.cpassword}
                                                 onChange={signupForm.handleChange}
                                             />
                                         </div>

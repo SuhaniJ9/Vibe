@@ -25,7 +25,13 @@ const Layout = ({ children }) => {
                             </div>
                             <div className="mt-6 flex flex-col justify-start items-center  pl-4 w-full border-[#E0FFFF] border-b space-y-3 pb-5 ">
                             
-
+                            <Link
+  href="/admin/contact"
+  className="flex bg-[#E0FFFF] hover:border-[#1ca9c9] rounded-xl py-2 px-16 hover:scale-105 hover:bg-[#1ca9c9] font-semibold duration-300 space-x-2 focus:outline-none group"
+>
+  <FaRegUser className="text-xl text-blue-900 group-hover:text-white duration-300" />
+  <span className="text-blue-900 group-hover:text-white duration-300">Contact</span>
+</Link>
 <Link
   href="/admin/manageuser"
   className="flex bg-[#E0FFFF] hover:border-[#1ca9c9] rounded-xl py-2 px-16 hover:scale-105 hover:bg-[#1ca9c9] font-semibold duration-300 space-x-2 focus:outline-none group"
