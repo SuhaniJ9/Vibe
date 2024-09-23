@@ -3,7 +3,12 @@ import Navbar from '../navbar';
 
 const About = () => {
   return (
-    <section className="bg-blue-700">
+
+    <>
+    <Navbar>
+
+    </Navbar>
+    <section className="bg-blue-900">
       <div className="container mx-auto py-16 px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
           <div className="max-w-lg">
@@ -39,7 +44,7 @@ const About = () => {
       <div className="py-12 bg-[#E0FFFF]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:text-center">
-            <h2 className="font-heading mb-4 bg-blue-700 text-[#E0FFFF] px-4 py-2 rounded-lg md:w-64 md:mx-auto text-xs font-semibold tracking-widest uppercase title-font">
+            <h2 className="font-heading mb-4 bg-blue-900 text-[#E0FFFF] px-4 py-2 rounded-lg md:w-64 md:mx-auto text-xs font-semibold tracking-widest uppercase title-font">
               Why Choose VibeTribe?
             </h2>
             <p className="font-heading mt-2 text-3xl leading-8 font-semibold tracking-tight text-blue-900 sm:text-2xl">
@@ -90,6 +95,7 @@ const About = () => {
 
       
     </section>
+    </>
   )
 }
 
